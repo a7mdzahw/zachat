@@ -1,0 +1,52 @@
+<html>
+  <body>
+    <div class="messages"></div>
+    <form id="chat-form">
+      <label for="message"> Enter Messgae </label>
+      <input type="text" id="message" />
+    </form>
+    <style>
+      body {
+        height: 80vh;
+      }
+      p {
+        background-color: bisque;
+        display: inline-block;
+        max-width: fit-content;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        font-size: 30px;
+        color: chocolate;
+      }
+
+      .from {
+        margin-left: auto;
+        color: blue;
+      }
+
+      .messages {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      #chat-form {
+        position: absolute;
+        bottom: 0;
+        width: 90vw;
+      }
+      label {
+        margin-bottom: 20px;
+        display: block;
+      }
+      input {
+        font-size: 40px;
+        height: 100px;
+        width: 100%;
+      }
+    </style>
+
+    <!-- <script src="/socket/socket.io.min.js"></script> -->
+    <script src="index.js"></script>
+  </body>
+</html>
