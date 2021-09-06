@@ -1,10 +1,13 @@
 {
+  "engines": {
+    "node": "14.x"
+  },
   "name": "chat",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "startClient": "serve client"
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
